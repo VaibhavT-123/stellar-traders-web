@@ -1,0 +1,148 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.527);
+  z-index: 200;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo-container img {
+  height: 50px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.logo-container p {
+  font-weight: 700;
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-container a {
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.about-container a:hover {
+  color: #007bff;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  background: #ffffff;
+  border-left: 1px solid rgba(161, 161, 161, 0.527);
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 300;
+}
+
+.overlay.show {
+  right: 0;
+}
+
+.overlay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.overlay-header p {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.close-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.overlay-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.overlay-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(63, 63, 63);
+  font-weight: 600;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+  width: 90%;
+}
+
+.overlay-links a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container img {
+    height: 40px;
+  }
+  .logo-container p {
+    font-size: 14px;
+  }
+}
