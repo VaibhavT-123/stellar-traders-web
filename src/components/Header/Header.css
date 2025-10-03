@@ -6,7 +6,7 @@
   width: 100%;
   background-color: #ffffff;
   padding: 12px 20px;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.527);
+  border-bottom: 1px solid rgba(221, 221, 221, 0.89);
   z-index: 200;
 }
 
@@ -55,7 +55,7 @@ header {
 }
 
 .about-container a:hover {
-  color: #007bff;
+  color: #17a54b;
 }
 
 .hamburger {

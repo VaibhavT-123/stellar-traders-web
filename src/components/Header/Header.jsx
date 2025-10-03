@@ -7,7 +7,7 @@ import logo from "../../assets/logo.webp";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // ✅ Close menu if screen resizes to desktop
+  //  Close menu if screen resizes to desktop
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -33,7 +33,7 @@ const Header = () => {
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/gallery">Gallery</Link>
-          <Link to="/contact" className="contact-btn">Contact</Link>
+          <Link to="/product" className="contact-btn" onClick={() => setMenuOpen(false)}>Products</Link>
         </div>
 
         {/* Hamburger */}
@@ -45,14 +45,14 @@ const Header = () => {
       {/* Overlay Mobile Menu */}
       <div className={`overlay ${menuOpen ? "show" : ""}`}>
         <div className="overlay-header">
-          <p>Menu</p>
+          <p>STELLAR GLOBAL TRADERS</p>
           <FaTimes className="close-icon" onClick={() => setMenuOpen(false)} />
         </div>
         <div className="overlay-links">
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link>
           <Link to="/gallery" onClick={() => setMenuOpen(false)}>Gallery</Link>
-          <Link to="/contact" className="contact-btn" onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link to="/product" className="contact-btn" onClick={() => setMenuOpen(false)}>Products</Link>
         </div>
       </div>
     </div>

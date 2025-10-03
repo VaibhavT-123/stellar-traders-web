@@ -8,11 +8,6 @@ const categories = [
   "Men",
   "Women",
   "Kids",
-  "Electronics",
-  "Appliances",
-  "Mobiles",
-  "Fashion",
-  "Toys",
 ];
 
 const Products = () => {
