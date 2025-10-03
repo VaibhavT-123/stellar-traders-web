@@ -139,6 +139,9 @@ header {
 }
 
 @media (max-width: 480px) {
+  .logo-container p{
+    display: none;
+  }
   .logo-container img {
     height: 40px;
   }
